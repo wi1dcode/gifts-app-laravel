@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Liste des cadeaux</title>
-</head>
-<body>
-    <h1>Liste des cadeaux</h1>
-
+<x-layouts.app>
     <a href="{{ route('gifts.create') }}">Ajouter un cadeau</a>
 
     @if ($gifts->isEmpty())
@@ -29,5 +21,4 @@
             @endforeach
         </ul>
     @endif
-</body>
-</html>
+</x-layouts.app>

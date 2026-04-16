@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Créer un cadeau</title>
-</head>
-<body>
+<x-layouts.app>
     <h1>Créer un cadeau</h1>
 
     <form action="{{ route('gifts.store') }}" method="POST">
@@ -46,5 +40,4 @@
     </form>
 
     <p><a href="{{ route('home') }}">Retour</a></p>
-</body>
-</html>
+</x-layouts.app>

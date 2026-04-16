@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Modifier un cadeau</title>
-</head>
-<body>
+<x-layouts.app>
     <h1>Modifier un cadeau</h1>
 
     <form action="{{ route('gifts.update', $gift) }}" method="POST">
@@ -47,5 +41,4 @@
     </form>
 
     <p><a href="{{ route('home') }}">Retour</a></p>
-</body>
-</html>
+</x-layouts.app>

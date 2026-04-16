@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Détail du cadeau</title>
-</head>
-<body>
+<x-layouts.app>
     <h1>Détail du cadeau</h1>
 
     <p><strong>Nom :</strong> {{ $gift->name }}</p>
@@ -23,5 +17,4 @@
 
     <p><a href="{{ route('gifts.edit', $gift) }}">Modifier</a></p>
     <p><a href="{{ route('home') }}">Retour</a></p>
-</body>
-</html>
+</x-layouts.app>
